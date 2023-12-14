@@ -1,18 +1,18 @@
 import axios from 'axios';
-import { usecomposant } from 'react';
+import { useEffect, useState, usecomposant } from 'react';
 
 
-function composant() 
+function Composant() 
 {
+    const [message, setMessage] = useState([]);
 
-   
-    const Usecomposant = 
-    usecomposant(() =>
-    {
-        axios.get('localhost/message');
-    })
+   useEffect(()=> {
+    axios.get('http://localhost:8000/message').then(message => setMessage(message));
+   });
 
-    return ;
+    return(
+        <p>{{ message }}</p>
+    );
 }
 
-export default composant
+export default Composant
