@@ -1,19 +1,6 @@
 import { registerReactControllerComponents } from '@symfony/ux-react';
 import './bootstrap.js';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-);
-
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-)
 /*
  * Welcome to your app's main JavaScript file!
  *
