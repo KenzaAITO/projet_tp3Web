@@ -15,4 +15,13 @@ class MessageController extends AbstractController
             'controller_name' => 'MessageController',
         ]);
     }
+    public function getMessages()
+    {
+        $messages = [
+            'MessageController Bonjour',
+            'Message 2',
+        ];
+
+        return $messages;
+    }
 }

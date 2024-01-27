@@ -26,11 +26,6 @@ class Controler2Controller extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/second-route", name="second_route")
-     */
-
-    //#[Route('/service', name: 'app_service')]
    
 }
 
